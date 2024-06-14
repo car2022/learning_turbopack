@@ -1,0 +1,45 @@
+.menu_button_container {
+  button {
+    display: block;
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    span:nth-child(1) {
+      width: 100%;
+      top: 0.5rem;
+      left: 0;
+    }
+    span:nth-child(2) {
+      width: 100%;
+      top: 0.75rem;
+      left: 0;
+    }
+    span:nth-child(3) {
+      width: 100%;
+      top: 1rem;
+      left: 0;
+    }
+  }
+  span {
+    position: absolute;
+    border: 1px solid black;
+  }
+  button[data-is_open="true"] {
+    span:nth-child(1) {
+      width: 100%;
+      top: 0.75rem;
+      left: 0;
+      transform: rotate(130deg);
+    }
+    span:nth-child(2) {
+      width: 100%;
+      top: 0.75rem;
+      left: 0;
+      transform: rotate(45deg);
+    }
+    span:nth-child(3) {
+      border: unset;
+    }
+  }
+}

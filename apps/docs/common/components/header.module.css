@@ -1,0 +1,26 @@
+.header_container {
+  display: flex;
+  .side_menu_container {
+    position: fixed;
+    top: 30px;
+    z-index: 1000;
+    display: grid;
+    grid-template: "SideMenu Overlay";
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 30% 1fr;
+    .side_menu {
+      grid-area: SideMenu;
+      background-color: white;
+    }
+    .overlay {
+      grid-area: Overlay;
+      background: black;
+      opacity: 0.6;
+    }
+  }
+}
+.header_container a {
+  display: block;
+  margin: 0 auto;
+}
